@@ -1,0 +1,38 @@
+</html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="calc">
+          <input id="display" placeholder="Calculator" readonly>
+          <div class="keypad">
+            <button class="buttons" onclick = "showInDisplay('7')">7</button>
+            <button class="buttons" onclick = "showInDisplay('8')">8</button>
+            <button class="buttons" onclick = "showInDisplay('9')">9</button>
+            <button class="buttons clear" onclick = "clearDisplay()">C</button>
+            <button class="buttons" onclick = "showInDisplay('4')">4</button>
+            <button class="buttons" onclick = "showInDisplay('5')">5</button>
+            <button class="buttons" onclick = "showInDisplay('6')">6</button>
+            <button class="buttons equal" onclick = "calculate()">=</button>
+            <button class="buttons" onclick = "showInDisplay('1')">1</button>
+            <button class="buttons" onclick = "showInDisplay('2')">2</button>
+            <button class="buttons" onclick = "showInDisplay('3')">3</button>
+            <button class="buttons operators" onclick = "showInDisplay('*')">X</button>
+            <button class="buttons" onclick = "showInDisplay('0')">0</button>
+            <button class="buttons operators" onclick = "showInDisplay('+')">+</button>
+            <button class="buttons operators" onclick = "showInDisplay('-')">-</button>
+            <button class="buttons operators" onclick = "showInDisplay('/')">/</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
